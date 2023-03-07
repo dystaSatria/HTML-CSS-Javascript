@@ -26,7 +26,7 @@ setInterval(function(){
     var cTop = -(500-characterTop);
     //last section
     if ((characterTop > 480)|| ((blockLeft<20)&&(blockLeft>-50)&&((cTop < holeTop)||(cTop>holeTop+130)))){//holeTop : 150 -40(character height so we minus with it.) = 110
-        alert("Coba lagi periode selanjutnya.\nTotal suara:\n"+ counter);
+        alert("Game Over.\nScore:\n"+ counter);
         character.style.top = 100+"px";
         counter=0;
     }
