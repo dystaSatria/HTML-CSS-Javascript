@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="logo.png">
+    <title>Quick Tip | dystaSatria </title>
+</head>
+<body>
+    <main id="container">
+        <h1>Quick Tip</h1>
+
+        <section>
+            <div class="bill">
+                <label for="">Bill</label>
+                <input type="number" name="" id="yourBill" placeholder="Your Bill"/>
+
+            </div>
+            <div>
+                <div class="space-between">
+                    <label for="tipInput">Select Bill :   </label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" name="" id="tipInput" class="range">
+            </div>
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="space-between">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue"> 1 person</span>
+                </div>
+                <input type="range" min="1" max="10" value="10" id="splitInput" class="range" />
+            </div>
+            <div class="space-between">
+                <span>Bill Each</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="space-between">
+                <span>Tip Each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+              <p>&copy; 2023 Hostel. All rights reserved.</p>
+              <p>Designed by dystaSatria</p>
+            </div>
+          </footer>
+
+    </main>
+    <script>
+
+        function formatMoney(value){
+            value = Math.ceil( (value*100 )/100);
+            value = value.toFixed(2);
+            return "$ " + value;
+
+
+        }   
+
+        function formatSplit(value){
+
+            if (value === "1") return value + " person";
+            return value + " people";
+        }
+        function update() {
+           let theBill = Number(document.getElementById("yourBill").value);
+           let thetipPercent = document.getElementById("tipInput").value;
+           let split = document.getElementById("splitInput").value;
+           
+
+           let tipValue = theBill * (thetipPercent / 100);
+           let tipEach = tipValue / split ;
+           let newBillEach = ( theBill + tipValue ) / split;
+
+            document.getElementById("tipPercent").innerHTML = thetipPercent + " %";
+            document.getElementById("tipValue").innerHTML = formatMoney(tipValue) ;
+            document.getElementById("totalWithTip").innerHTML = formatMoney(tipValue + theBill)  ;
+
+            document.getElementById("splitValue").innerHTML = formatSplit(split)  ;
+            document.getElementById("billEach").innerHTML = formatMoney(newBillEach) ;
+            document.getElementById("tipEach").innerHTML = formatMoney(tipEach) ;
+        }
+
+        let container = document.getElementById("container");
+        container.addEventListener("input", update);
+
+
+    </script>
+</body>
+</html>
