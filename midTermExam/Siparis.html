@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparis sayfasiniz</title>
+    <link rel="icon" type="image/x-icon" href="nugas/tempe.png">
+    <style>
+
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}   
+
+      table{
+  border: 10px solid brown;
+}
+
+    th,td,tr,input {
+        border: 1px solid black;
+        background-color: chocolate;
+    color: rgb(36, 31, 31);}
+
+    #submit{
+
+background-color: whitesmoke;
+
+    }
+    
+    #reset{
+
+
+background-color: whitesmoke;
+    }
+
+    #Click{
+        
+        background-color: tomato    ;
+    }
+    #Reset{
+        
+        background-color: tomato
+    }
+
+    body{
+      background : linear-gradient(to right,black,white);
+    }
+    </style>
+</head>
+<body>
+    
+    
+    <!-- Siparis etmek icin-->
+    <div class="row">
+    <form action="https://wa.me/905541835262?text=Hi%20There!" method="get" style="text-align: center;">
+      <div class="col-12">
+        <button style="float: right;color: black;background-color: red;display: block;" onclick="uyari2();location.href='Home.html'" >X</button>
+        <h1 style="margin-left: 10%;"><b>Lutfen Doldursunuz</b></h1>
+        <table style="margin-left: 30%;">
+        <tr>
+          <th style="background-color: wheat;">Form</th>
+            <th style="background-color: wheat;">Your Input</th>
+        <tr>
+          <td style="text-align: center;display: block;"><label for="Adi"><strong>Adi</strong></label></td>
+          <td><input type="text" id="Adi" name="Adi"  required></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;display: block;"><label for="Soyadi"><strong>Soyadi</strong></label></td>
+            <td><input type="text" id="Soyadi" name="Soyadi"  required></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;display: block;"><label for="Adress"><strong>Adress</strong></label></td>
+            <td><input type="text" id="Adress" name="Adress"  required></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;display: block;"><label for="Telefon"><strong>Telefon Numaran</strong></label></td>
+            <td><input type="text" id="Telefon" name="Telefon"  required maxlength="11"></td>
+        </tr>
+      </table>
+      
+      <button onclick="adress()" id="Click">Gonder </button> 
+      <input type="reset" id="Reset" value="Reset">
+      </form>
+      <br>
+    
+
+      <!-- Siparis Yemek-->
+      <div class="col-12">
+      <form action="https://wa.me/905541835262?text=Hi%20There!">
+        
+          <h1 style="margin-left: 10%;"><b>Yemek Siparisin</b></h1>
+          <table style="margin-left: 30%;">
+          <tr>
+          <th style="background-color: wheat;">Yemekler</th>
+            <th style="background-color: wheat;">Your Input</th>
+        <tr>
+          <td style="text-align: center;"><label for="Nasi Goreng"><strong>Nasi Goreng</strong></label></td>
+          <td><input type="number" id="Nasi Goreng" name="Nasi Goreng" required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Ayam Bakar"><strong>Ayam Bakar Padang</strong></label></td>
+            <td><input type="number" id="Ayam Bakar" name="Ayam Bakar"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Empal Gentong"><strong>Empal Gentong</strong></label></td>
+            <td><input type="number" id="Empal Gentong" name="Empal Gentong"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Rendang"><strong>Rendang</strong></label></td>
+            <td><input type="number" id="Rendang" name="Rendang" required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Ayam Geprek"><strong>Ayam Geprek</strong></label></td>
+            <td><input type="number" id="Ayam Geprek" name="Ayam Geprek" required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="fname"><strong>Nasi jamblang</strong></label></td>
+            <td><input type="number" id="Nasi jamblang" name="Nasi jamblang"  required min="0"></td>
+        </tr>
+      </table>
+      <button onclick="siparisy()" id="Click">Gonder </button> 
+      <input type="reset" id="Reset" value="Reset">
+    </form>
+      </div>
+
+
+
+      <!-- Siparis icecek-->
+      <div class="col-12">
+      <form>
+      
+        <caption><h1><b> Icecek Siparisin</b></h1></caption>
+        <table style="margin-left: 30%;">
+          <tr>
+          <th style="background-color: wheat;">Icecekler</th>
+            <th style="background-color: wheat;">Your Input</th>
+        <tr>
+          <td style="text-align: center;"><label for="Es Cendol"><strong>Es Cendol</strong></label></td>
+          <td><input type="number" id="Es Cendol" name="Es Cendol"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Es Selendang Mayang"><strong>Es Selendang Mayang</strong></label></td>
+            <td><input type="number" id="Es Selendang Mayang" name="Es Selendang Mayang"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Es Kelapa"><strong>Es Kelapa</strong></label></td>
+            <td><input type="number" id="Es Kelapa" name="Es Kelapa"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Bajigur"><strong>Bajigur</strong></label></td>
+            <td><input type="number" id="Bajigur" name="Bajigur"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Bir Pletok"><strong>Bir Pletok</strong></label></td>
+            <td><input type="number" id="Bir Pletok" name="Bir Pletok"  required min="0"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><label for="Es Buah"><strong>Es Buah</strong></label></td>
+            <td><input type="number" id="Es Buah" name="Es Buah"  required min="0"></td>
+        </tr>
+      </table>
+      <button onclick="siparisi()" id="Click">Gonder </button> 
+      <input type="reset" id="Reset" value="Reset">  
+    </form>   
+    </div>
+
+  </div>
+      <script>
+        function adress() {
+            
+           
+            var n = document.getElementById("Adi").value;
+            var n1 = document.getElementById("Soyadi").value;
+            var n2 = document.getElementById("Adress").value;
+            var n3 = document.getElementById("Telefon").value;
+            
+          /* if(Soyadi=" "){
+               alert("Lutfen Kontrol Edersin");
+               return false;
+           }*/
+
+            var url = "https://wa.me/905541835262?text=" 
+            + "Adi: " + n + "%0a"
+            + "Soyadi: " + n1 + "%0a"
+            + "Adress: " + n2  + "%0a"
+            + "Telefon: " + n3 ; 
+        
+            window.open(url, '_blank').focus();
+        }
+
+
+        function siparisy(){
+          var a1 = document.getElementById("Nasi Goreng").value;
+            var a2 = document.getElementById("Ayam Bakar").value;
+            var a3 = document.getElementById("Empal Gentong").value;
+            var a4 = document.getElementById("Rendang").value;
+            var a5 = document.getElementById("Ayam Geprek").value;
+            var a6 = document.getElementById("Nasi jamblang").value;
+
+            
+            var url = "https://wa.me/905541835262?text=" 
+            + "Nasi Goreng :" + a1 + "%0a"
+            + "Ayam Bakar Padang: " + a2 + "%0a"
+            + "Empal Gentong :" + a3  + "%0a"
+            + "Rendang: " + a4 + "%0a"
+            + "Ayam Geprek: " + a5 + "%0a"
+            + "Nasi jamblang: " + a6 + "%0a";
+
+            window.open(url, '_blank').focus();
+        }
+
+        function siparisi(){
+          var b1 = document.getElementById("Es Cendol").value;
+            var b2 = document.getElementById("Es Selendang Mayang").value;
+            var b3 = document.getElementById("Es Kelapa").value;
+            var b4 = document.getElementById("Bajigur").value;
+            var b5 = document.getElementById("Bir Pletok").value;
+            var b6 = document.getElementById("Es Buah").value;
+
+            
+            var url = "https://wa.me/905541835262?text=" 
+            + "Es Cendol :" + b1 + "%0a"
+            + "Es Selendang Mayang: " + b2 + "%0a"
+            + " Es Kelapa :" + b3  + "%0a"
+            + "  Bajigur: " + b4 + "%0a"
+            + " Bir Pletok: " + b5 + "%0a"
+            + " Es Buah: " + b6 + "%0a";
+
+            window.open(url, '_blank').focus();
+        }
+
+        function uyari2(){
+          window.location.href = "Menu.html";
+        }  
+          
+        
+        </script>
+
+</body>
+</html>
