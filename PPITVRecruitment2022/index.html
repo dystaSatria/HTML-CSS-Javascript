@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/Logoppi.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--=============== BootStrap ===============-->
+        <title>Responsive landing page headphones</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/Logoppi.png" alt="" >
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Visi Misi</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#case" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Required Division</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="assets/img/Logoppi.png" alt="" class="home__img">
+                    </div>
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">Open</h1>
+                            <h2 class="home__subtitle">Recruitment</h2>
+                            
+
+
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">27 Maret - 10 April 2022</h3>
+                          
+                                <p class="home__description">Join the Excitement Behind the Scenes! 🎥🌍 PPI TV Turkey 2022 Recruitment is Open! 📢 If you have a passion for storytelling, camera magic, and bringing captivating content to life, this is your chance to shine.</p>
+                    
+                       
+                            <a href="#" class="button button--flex" onclick="checkRecruitment()">
+                                <span class="button--flex">
+                                    <i class="fas fa-arrow-right button__icon"></i>Go To Recruitment Form 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--=============== Organization logo ===============-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <img src="assets/img/sponsor1.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor2.png" alt="" class="sponsor__img">
+                    <img src="assets/img/sponsor3.png" alt="" class="sponsor__img">
+             
+                </div>
+            </section>
+
+            <!--=============== Visi Misi ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Visi Misi</h2>
+
+                <div class="specs__container container grid">
+
+                    <img src="assets/img/visiMisi.png" alt="" class="specs__img">
+                    <div class="specs__content grid">
+
+                       
+                        <div class="specs__data">
+                            <h3 class="specs__title">Visi </h3>
+                            <span class="specs__subtitle">Menyampaikan informasi baik dalam bentuk visual maupun tertulis mengenai pendidikan, kehidupan, hiburan dan hal – hal terkini yang terjadi di mancanegara ke dalam negeri maupun ke luar negeri.</span>
+                        </div>
+    
+                    
+                        <div>
+                            
+                        </div>
+                        
+    
+                        <div class="specs__data">
+                            
+                            <h3 class="specs__title">Misi</h3>
+                            <span class="specs__subtitle">Menjadi sebuah platform utama dan terdepan bagi seluruh pelajar indonesia di dunia untuk menyalurkan bakat dan hobi baik di bidang akademik maupun non-akademik terutama di bidang jurnalistik.</span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
+            <!--=============== Gallery ===============-->
+            <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Gallery</h2>
+
+                <div class="case__container container grid">
+
+                    
+
+                    <div class="case__data">
+                        
+                    
+                    </div>
+                </div>
+            </section>
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <img src="assets/img/galeri1.png" alt="" class="sponsor__img" onclick="openPopup('assets/img/galeri1.png')">
+                    <img src="assets/img/galeri2.png" alt="" class="sponsor__img" onclick="openPopup('assets/img/galeri2.png')">
+                    <img src="assets/img/galeri3.png" alt="" class="sponsor__img" onclick="openPopup('assets/img/galeri3.png')">
+                    <img src="assets/img/galeri4.png" alt="" class="sponsor__img" onclick="openPopup('assets/img/galeri4.png')">
+                  </div>
+                  
+                  <div class="popup-container" id="popupContainer">
+
+                    <div class="popup-content">
+                        <img src="" alt="" class="popup-img" id="popupImg">
+                        <button class="close-button" onclick="closePopup()">
+                          <span class="close-icon">&times;</span>
+                        </button>
+                      </div>
+                      
+                  </div>
+                  
+            </section>
+
+           
+
+           
+            <!--=============== Required Division ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                    Required Division
+                </h2>
+
+                <div class="products__container container grid">
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/producer.png" alt="" class="products__img">
+    
+                            <h3 class="products__title" style="text-align: center;">Producer</h3>
+    
+                            
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/designGraphic.png" alt="" class="products__img" >
+    
+                            <h3 class="products__title" style="text-align: center;">Design Graphic</h3>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/reporter.png" alt="" class="products__img" style="height: 100px; width: 100%;">
+    
+                            
+                            <h3 class="products__title" style="text-align: center;">Reporter</h3>
+
+                            
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/videoEditor.png" alt="" class="products__img">
+    
+                            <h3 class="products__title" style="text-align: center;">Video Editor</h3>
+
+                        </div>
+                    </article>
+
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/socialStrategy.png" alt="" class="products__img">
+    
+                            <h3 class="products__title" style="text-align: center;">Social Media Strategy</h3>
+
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/sponsor2.png" alt="" class="case__img">
+                    
+                </a>
+    
+                <div class="footer__content">
+
+                    <ul class="footer__links">
+                        <p style="color: bisque;font-family:monospace; font-size: x-large;">Dari Pelajar, Untuk Pelajar!</p>
+
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+
+                </div>
+    
+                <div class="footer__content">
+                    <form action="mailto:dyzzta@gmail.com?subject=About%20Recruitment%20Information&body=I%20want%20to%20ask%20about%20..............%21" method="post" class="footer__form">
+                        <input type="email" placeholder="Ask us via email" class="footer__input" name="email">
+                        <button type="submit" class="button button--flex">
+                            <i class="ri-message-line"></i>
+                        </button>
+                    </form>
+                    
+                    
+
+    
+                    <div style="text-align: center;">
+                        
+                    </div>
+                </div>
+            </div>
+           
+            <p class="footer__copy">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/ppitvturki/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://www.youtube.com/@PPITVTurki" target="_blank" class="footer__social-link">
+                    <i class="ri-youtube-line"></i>
+                </a>
+                <br>
+                <br>
+                <br>
+
+                <a href="https://github.com/dystaSatria" target="_blank" class="footer__copy-link">&#169; dystaSatria | 2022 . All right reserved</a>
+            </p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            function openPopup(imageSrc) {
+        document.getElementById("popupImg").src = imageSrc;
+        document.getElementById("popupContainer").classList.add("active");
+            }
+
+            function closePopup() {
+        document.getElementById("popupContainer").classList.remove("active");
+        }
+
+        function checkRecruitment() {
+    var recruitmentDeadline = new Date("2022-03-01"); // Batas tanggal penerimaan
+    var currentDate = new Date();
+
+    if (currentDate > recruitmentDeadline) {
+        alert("Sorry, recruitment is now closed.");
+    } else {
+        window.location.href = "https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=oBaJUIl7oUOvTnL-FauludaS0kRB4o5Jlvx9K5ZWwk5UMFI5TTNMTEhBQVpCOTUwV1FDUEhQN1VMRy4u&flexpane=Settings";
+    }
+}
+
+          </script>
+
+<script>
+   
+    </script>
+        <!--=============== MAIN JS ===============-->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+         -->
+    </body>
+</html>
