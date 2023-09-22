@@ -1,23 +1,22 @@
 /**
- * TODO:
- * Buatlah sebuah variabel dengan nama evenNumber yang merupakan sebuah array dengan ketentuan:
- *   - Array tersebut menampung bilangan genap dari 1 hingga 100
- *
- * Catatan:
- *   - Agar lebih mudah, gunakanlah for loop dan logika if untuk mengisi bilangan genap pada array.
- */
 
-// Tulis kode di bawah ini
+TODO:
+Create a variable named evenNumber, which is an array with the following conditions:
+The array should contain even numbers from 1 to 100.
+Note:
+To make it easier, use a for loop and if logic to populate even numbers in the array.
+*/
+// Write the code below
 
-// Membuat variabel evenNumber sebagai array kosong
+// Creating the evenNumber variable as an empty array
 const evenNumber = [];
 
-// Mengisi array evenNumber dengan bilangan genap dari 1 hingga 100
+// Populating the evenNumber array with even numbers from 1 to 100
 for (let i = 1; i <= 100; i++) {
-  if (i % 2 === 0) {
-    evenNumber.push(i);
-  }
+if (i % 2 === 0) {
+evenNumber.push(i);
+}
 }
 
-// Menampilkan array evenNumber
+// Displaying the evenNumber array
 console.log(evenNumber);
