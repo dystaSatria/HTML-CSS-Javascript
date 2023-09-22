@@ -1,13 +1,13 @@
 /**
  * TODO:
- * Buatlah variabel firstName, lastName, age, isMarried dengan ketentuan:
- *  - firstName: bertipe data string, dengan nilai "John".
- *  - lastName: bertipe data string, dengan nilai "Doe".
- *  - age: bertipe data number, dengan nilai 25.
- *  - isMarried: bertipe data boolean, dengan nilai true.
+ * Create variables firstName, lastName, age, isMarried with the following specifications:
+ *  - firstName: data type string, with a value of "John".
+ *  - lastName: data type string, with a value of "Doe".
+ *  - age: data type number, with a value of 25.
+ *  - isMarried: data type boolean, with a value of true.
  */
 
-// Tulis kode di bawah ini
+// Write the code below
 
 var firstName = "John";
 var lastName = "Doe";
