@@ -28,4 +28,8 @@ The XOXO Game allows two players to take turns and marks their moves on a 3x3 gr
 - The `checkWin` function verifies if a player has won by checking various winning combinations.
 - The `checkTie` function checks for a tie when all boxes are filled.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 Feel free to explore and modify the code to enhance or customize the game as needed.
