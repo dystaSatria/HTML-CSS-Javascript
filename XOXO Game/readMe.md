@@ -30,6 +30,6 @@ The XOXO Game allows two players to take turns and marks their moves on a 3x3 gr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/dystaSatria/FrontendWeb/blob/main/XOXO%20Game/LICENSE.MD) file for details.
 
 Feel free to explore and modify the code to enhance or customize the game as needed.
