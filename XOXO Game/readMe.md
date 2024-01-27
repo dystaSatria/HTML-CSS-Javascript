@@ -8,7 +8,7 @@ The XOXO Game allows two players to take turns and marks their moves on a 3x3 gr
 
 ## How to Play
 
-1. Download Open the `index.html` file in a web browser.
+1. Download & Open the `index.html` file in a web browser.
 2. The game board consists of 3x3 boxes.
 3. Players take turns by clicking on an empty box to mark their move.
 4. The game will display an alert if a player wins or if it's a tie.
