@@ -6,7 +6,7 @@ This is a simple implementation of the XOXO (Tic-Tac-Toe) game using HTML, CSS, 
 
 The XOXO Game allows two players to take turns and marks their moves on a 3x3 grid. The game checks for a winning condition or a tie after each move.
 
-[](https://github.com/dystaSatria/FrontendWeb/blob/main/XOXO%20Game/Screenshot%20(944).png)
+![hhj](https://github.com/dystaSatria/FrontendWeb/blob/main/XOXO%20Game/Screenshot%20(944).png)
 
 ## How to Play
 
