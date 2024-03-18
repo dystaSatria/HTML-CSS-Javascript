@@ -8,6 +8,8 @@ Sebuah proyek kecil yang berisi surat semangat yang dibungkus dalam animasi ampl
 
 Proyek ini dibuat sebagai simbolik dari pengiriman surat kepada seseorang. Saat pengguna mengklik pada amplop, amplop tersebut akan "terbuka" dan sebuah surat akan "muncul" dengan pesan singkat di dalamnya.
 
+![Gambar Surat]()
+
 ### Teknologi
 
 - HTML
