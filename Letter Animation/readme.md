@@ -10,6 +10,7 @@ Proyek ini dibuat sebagai simbolik dari pengiriman surat kepada seseorang. Saat 
 
 ![Gambar Surat](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(983).png)
 
+![Gambar Surat](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(984).png)
 ### Teknologi
 
 - HTML
