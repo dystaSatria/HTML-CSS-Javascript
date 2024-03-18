@@ -1,44 +1,41 @@
-# Letter Animation 
+# Letter Animation
 
-Sebuah proyek kecil yang berisi surat semangat yang dibungkus dalam animasi amplop interaktif menggunakan HTML, CSS, dan JavaScript.
+A small project featuring an encouraging letter wrapped in an interactive envelope animation using HTML, CSS, and JavaScript.
 
+## Description
 
+This project was created as a symbolic gesture of sending a letter to someone. When the user clicks on the envelope, it will "open," and a letter will "emerge" with a short message inside.
 
-## Deskripsi
+![Letter Image](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(983).png)
 
-Proyek ini dibuat sebagai simbolik dari pengiriman surat kepada seseorang. Saat pengguna mengklik pada amplop, amplop tersebut akan "terbuka" dan sebuah surat akan "muncul" dengan pesan singkat di dalamnya.
+![Letter Image](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(984).png)
 
-![Gambar Surat](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(983).png)
-
-![Gambar Surat](https://github.com/dystaSatria/HTML-CSS-Javascript/blob/main/Letter%20Animation/Screenshot%20(984).png)
-### Teknologi
+### Technologies
 
 - HTML
 - CSS
 - JavaScript
 
-## Fitur
+## Features
 
-- Desain amplop yang realistis dengan animasi pembukaan.
-- Pesan semangat sederhana yang muncul setelah amplop dibuka.
-- Interaksi yang mudah dan intuitif.
+- A realistic envelope design with opening animation.
+- A simple encouraging message appears after the envelope is opened.
+- Easy and intuitive interaction.
 
-## Cara Menggunakan
+## How to Use
 
-1. Buka file `index.html` dengan browser favorit Anda.
-2. Klik pada amplop untuk melihat surat muncul dengan pesan semangat.
-3. Nikmati pesan yang ditujukan untuk SriDwi.
+1. Open the `index.html` file with your favorite browser.
+2. Click on the envelope to see the letter appear with an encouraging message.
+3. Enjoy the message intended for SriDwi.
 
-## Kontribusi
+## Contribution
 
-Proyek ini dibuat oleh Dysta sebagai cara kreatif untuk mengirimkan semangat dan pesan positif. Jika Anda memiliki saran atau ide untuk memperbaiki atau menambahkan fitur, silakan fork proyek ini dan kirimkan pull request Anda.
+This project was created by Dysta as a creative way to send encouragement and positive messages. If you have suggestions or ideas for improvements or additional features, please feel free to fork this project and submit your pull requests.
 
-## Lisensi
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Ini adalah proyek sumber terbuka; Anda bebas untuk menggunakannya, memodifikasinya, dan mendistribusikannya sesuai dengan lisensi.
+This is an open-source project; you are free to use, modify, and distribute it according to the license.
 
 ---
-
-Terima kasih telah mengunjungi dan menggunakan proyek ini. Semoga hari Anda penuh dengan semangat dan kebahagiaan!
