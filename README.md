@@ -1,1 +1,1 @@
-# HTML CSS and Javascript Doc
+# HTML CSS and Javascript Documentation
