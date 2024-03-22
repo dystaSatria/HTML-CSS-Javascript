@@ -25,7 +25,7 @@ The XOXO Game allows two players to take turns and marks their moves on a 3x3 gr
 ## Code Structure
 
 - `index.html`: HTML file defining the structure of the game.
-    - CSS.
+    - CSS
     - Javascript 
 
 ## Game Logic
