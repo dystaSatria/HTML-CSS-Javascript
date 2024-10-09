@@ -1,7 +1,5 @@
 # Organizational Chart Static
 
-# Organizational Chart
-
 This project contains a simple organizational chart created using HTML, CSS, and Bootstrap. The chart visually represents the hierarchy within an organization.
 
 ## Features
