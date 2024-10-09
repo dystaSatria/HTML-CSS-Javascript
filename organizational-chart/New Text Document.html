@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizational Chart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black; /* Light background */
+        }
+
+        .org-chart {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff; /* White background for the chart */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .node {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #007bff; /* Blue border */
+            border-radius: 8px;
+            background-color: #ffffff; /* White background for nodes */
+            margin: 10px;
+            flex: 1 1 150px; /* Allow nodes to grow and shrink */
+            min-width: 150px; /* Minimum width for nodes */
+            max-width: 250px; /* Maximum width for nodes */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .node:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4); /* Shadow on hover */
+        }
+
+        .node-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff; /* Blue color for titles */
+        }
+
+        .node-role {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .connector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 30px; /* Height for the connector */
+        }
+
+        .connector:before,
+        .connector:after {
+            content: '';
+            width: 50%;
+            border-top: 2px solid #007bff; /* Blue connector line */
+            position: absolute;
+            top: 0;
+        }
+
+        .connector:before {
+            left: 0;
+        }
+
+        .connector:after {
+            right: 0;
+        }
+
+        .children {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Space between rows */
+            flex-wrap: wrap; /* Allow wrapping of nodes */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .children {
+                flex-direction: column; /* Stack children vertically on smaller screens */
+            }
+
+            .node {
+                min-width: 100%; /* Full width for nodes on smaller screens */
+                margin: 5px 0; /* Adjust margin for stacked nodes */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">Organizational Chart</h1>
+        <p class="lead">Below is a simple organizational chart created by dystaSatria</p>
+    </div>
+</div>
+<div class="org-chart text-center">
+    <div style="display: flex; justify-content: center;">
+        <div class="node">
+            <div class="node-title">CEO</div>
+            <div class="node-role">Chief Executive Officer</div>
+        </div>
+    </div>
+    <div class="connector"></div>
+    <div class="children">
+        <div class="node">
+            <div class="node-title">CTO</div>
+            <div class="node-role">Chief Technology Officer</div>
+        </div>
+        <div class="node">
+            <div class="node-title">CFO</div>
+            <div class="node-role">Chief Financial Officer</div>
+        </div>
+        <div class="node">
+            <div class="node-title">CMO</div>
+            <div class="node-role">Chief Marketing Officer</div>
+        </div>
+    </div>
+    <div class="connector"></div>
+    <div class="children">
+        <div class="node">
+            <div class="node-title">Dev Manager</div>
+            <div class="node-role">Development Manager</div>
+        </div>
+        <div class="node">
+            <div class="node-title">Design Manager</div>
+            <div class="node-role">Design Manager</div>
+        </div>
+        <div class="node">
+            <div class="node-title">Finance Manager</div>
+            <div class="node-role">Finance Manager</div>
+        </div>
+        <div class="node">
+            <div class="node-title">Marketing Manager</div>
+            <div class="node-role">Marketing Manager</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
